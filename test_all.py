@@ -48,3 +48,14 @@ order1.add_order_line(digital, 1)
 order1.display_order()
 
 #----------------------------------------#
+
+print("Liskov Substitution Principle (LSP) Part 6")
+print()
+def show_product_details(product: Product) -> None:
+    product.display_product()
+    product.get_fulfilment_info()
+
+show_product_details(phy)
+print()
+
+#----------------------------------------#
