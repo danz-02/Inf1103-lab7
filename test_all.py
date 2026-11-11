@@ -39,3 +39,12 @@ print("\nAdding same product to Inventory B:")
 inventoryB.add_product(phy)
 inventoryB.display()    
 #----------------------------------------#
+
+print("Test composition Part 4")
+
+order1 = Order("0001")
+order1.add_order_line(phy, 3)
+order1.add_order_line(digital, 1)
+order1.display_order()
+
+#----------------------------------------#
