@@ -22,3 +22,20 @@ phy.supplier.display_supplier()
 digital.supplier.display_supplier()
 
 #------------------------------------#
+
+print("Test Aggregation Part 3")
+inventoryA = Inventory()
+inventoryB = Inventory()
+
+print("\nAdding product to Inventory A:")
+inventoryA.add_product(phy)
+inventoryA.display()
+
+print("\nRemoving product from Inventory A:")
+inventoryA.remove_product("P001")
+inventoryA.display()
+
+print("\nAdding same product to Inventory B:")
+inventoryB.add_product(phy)
+inventoryB.display()    
+#----------------------------------------#
