@@ -59,3 +59,14 @@ show_product_details(phy)
 print()
 
 #----------------------------------------#
+
+print("Polymorphism Part 7")
+
+# Add both products to the inventory
+inventory.add_product(phy)
+inventory.add_product(digital)
+
+for product in inventory._product:  # or inventory.products
+    product.display_product()  # or display_information() depending on your class method
+    print()
+    product.get_fulfilment_info()
