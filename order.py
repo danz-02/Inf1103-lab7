@@ -9,7 +9,6 @@ class OrderLine:
     def calculate_subtotal(self):
         return self.product.get_price() * self.quantity
 
-
 class Order:
     def __init__(self, order_id: str):
         self.order_id: str = order_id
